@@ -1,0 +1,133 @@
+import { photos } from "./photos";
+import { contactDetails } from "./contact";
+import type { Localized, SectionId } from "./types";
+
+export const siteConfig = {
+  name: "RIO",
+  fullName: "Robotics & IoT Club",
+  affiliation: "VKU",
+  facebook: contactDetails.facebook,
+  meta: {
+    title: "RIO Club | Robotics & IoT Club – VKU",
+    description: {
+      vi: "RIO Club – Robotics & IoT Club tại VKU, tập trung vào Robotics, IoT, Embedded Systems, AIoT và nghiên cứu công nghệ ứng dụng.",
+      en: "RIO Club – Robotics & IoT Club at VKU, exploring Robotics, IoT, Embedded Systems, AIoT and applied technology research.",
+    },
+    ogAlt: { vi: "RIO – Robotics & IoT Club tại VKU", en: "RIO – Robotics & IoT Club at VKU" },
+  },
+  labels: {
+    home: { vi: "RIO — Trang chủ", en: "RIO — Home" },
+    logoAlt: { vi: "Logo RIO Club", en: "RIO Club logo" },
+    navigation: { vi: "Điều hướng chính", en: "Main navigation" },
+    footerNavigation: { vi: "Điều hướng cuối trang", en: "Footer navigation" },
+    openMenu: { vi: "Mở menu", en: "Open menu" },
+    closeMenu: { vi: "Đóng menu", en: "Close menu" },
+    language: { vi: "Chọn ngôn ngữ", en: "Choose language" },
+    darkMode: { vi: "Chế độ tối", en: "Dark mode" },
+    switchDark: { vi: "Chuyển sang giao diện tối", en: "Switch to dark mode" },
+    switchLight: { vi: "Chuyển sang giao diện sáng", en: "Switch to light mode" },
+    openPhoto: { vi: "Xem ảnh lớn", en: "Enlarge photo" },
+    closePhoto: { vi: "Đóng ảnh", en: "Close photo" },
+    previousPhoto: { vi: "Ảnh trước", en: "Previous photo" },
+    nextPhoto: { vi: "Ảnh tiếp theo", en: "Next photo" },
+    photoViewer: { vi: "Thư viện hình ảnh RIO", en: "RIO photo gallery" },
+    skip: { vi: "Đi đến nội dung", en: "Skip to content" },
+    explore: { vi: "Khám phá RIO", en: "Explore RIO" },
+    join: { vi: "Tham gia RIO", en: "Join RIO" },
+    details: { vi: "Tìm hiểu thêm", en: "Explore more" },
+    facebook: { vi: "Theo dõi trên Facebook", en: "Follow on Facebook" },
+    facebookName: "Facebook",
+    external: { vi: "mở trong tab mới", en: "opens in a new tab" },
+    top: { vi: "Về đầu trang", en: "Back to top" },
+    copyright: { vi: "Robotics & IoT Club. VKU.", en: "Robotics & IoT Club. VKU." },
+  },
+  languages: [
+    { code: "vi", label: "VI", name: "Tiếng Việt" },
+    { code: "en", label: "EN", name: "English" },
+  ],
+  navigation: [
+    { id: "about", label: { vi: "Về RIO", en: "About" } },
+    { id: "projects", label: { vi: "Dự án", en: "Projects" } },
+    { id: "activities", label: { vi: "Hoạt động", en: "Activities" } },
+    { id: "achievements", label: { vi: "Thành tích", en: "Achievements" } },
+    { id: "gallery", label: { vi: "Thư viện", en: "Gallery" } },
+    { id: "contact", label: { vi: "Liên hệ", en: "Contact" } },
+    { id: "join", label: { vi: "Tham gia", en: "Join" } },
+  ] satisfies { id: SectionId; label: Localized }[],
+  hero: {
+    eyebrow: { vi: "CỘNG ĐỒNG KỸ THUẬT TẠI VKU", en: "AN ENGINEERING COMMUNITY AT VKU" },
+    title: "RIO",
+    subtitle: ["ROBOTICS &", "IoT CLUB."],
+    description: {
+      vi: "Một cộng đồng kỹ thuật tại VKU, cùng khám phá Robotics, IoT, Embedded Systems và công nghệ ứng dụng.",
+      en: "An engineering community at VKU, exploring robotics, IoT, embedded systems and technology that works in the real world.",
+    },
+    principles: ["ENGINEERING", "RESEARCH", "BUILD", "INNOVATION"],
+    image: photos.demonstration,
+    imageLabel: { vi: "FACTORYMIND / AIoT INNOWORKS 2026", en: "FACTORYMIND / AIoT INNOWORKS 2026" },
+    imageIndex: "FIG. 01",
+    footer: { vi: "TỪ Ý TƯỞNG ĐẾN THỰC TẾ.", en: "FROM IDEAS TO REALITY." },
+    scroll: { vi: "CUỘN ĐỂ KHÁM PHÁ", en: "SCROLL TO EXPLORE" },
+  },
+  about: {
+    eyebrow: { vi: "VỀ CHÚNG MÌNH", en: "WHO WE ARE" },
+    title: { vi: "Tò mò để hiểu.\nBắt tay để tạo nên.", en: "Driven by curiosity.\nDefined by making." },
+    lead: {
+      vi: "RIO là nơi kết nối những người yêu kỹ thuật tại VKU — cùng học hỏi, nghiên cứu và đưa ý tưởng đến gần hơn với thực tế.",
+      en: "RIO brings together people with a shared interest in engineering at VKU — to learn, investigate and bring ideas closer to reality.",
+    },
+    body: {
+      vi: "Từ những dòng code đến mạch điện, từ cảm biến đến hệ thống chuyển động. Chúng mình quan tâm đến cách công nghệ hoạt động, cách các bộ phận kết nối và những gì có thể tạo ra khi cùng nhau bắt tay thực hiện.",
+      en: "From lines of code to circuits. From sensing to motion. We care about how technology works, how its parts connect, and what becomes possible when we start building together.",
+    },
+    note: { vi: "HỌC HỎI. THỬ NGHIỆM. CÙNG TIẾN BỘ.", en: "LEARN. EXPERIMENT. GROW TOGETHER." },
+    story: {
+      vi: "Tinh thần ấy được thể hiện qua những hành trình cụ thể: xây dựng và trình diễn FactoryMind, tham gia IoT Challenge, mang sản phẩm đến AIoT Developer InnoWorks và đồng hành với ENJOY AI Việt Nam trong vai trò trọng tài. Mỗi trải nghiệm là một góc nhìn khác về kỹ thuật — từ làm ra một mô hình đến trình bày ý tưởng và đóng góp cho cộng đồng.",
+      en: "That approach takes shape in real experiences: building and demonstrating FactoryMind, competing in IoT Challenge, taking a project to AIoT Developer InnoWorks and supporting ENJOY AI Vietnam as referees. Each offers a different perspective on engineering — from making a prototype to explaining an idea and contributing to a community.",
+    },
+    practices: [
+      { title: { vi: "Hiểu bài toán", en: "Understand the problem" }, description: { vi: "Bắt đầu từ điều cần giải quyết. Tìm hiểu cách một hệ thống vận hành trước khi chọn công cụ hay giải pháp.", en: "Start with what needs solving. Understand how a system works before choosing tools or solutions." } },
+      { title: { vi: "Làm thành sản phẩm", en: "Make it tangible" }, description: { vi: "Kết nối linh kiện, lập trình, thử nghiệm mô hình và quan sát kết quả. Ý tưởng trở nên rõ hơn khi được đưa vào thực tế.", en: "Connect components, write code, test a model and observe the result. Ideas become clearer when they meet the real world." } },
+      { title: { vi: "Chia sẻ và tiến bộ", en: "Share and improve" }, description: { vi: "Trình bày sản phẩm, trao đổi với người khác và tiếp tục hoàn thiện. Kiến thức có giá trị hơn khi được cùng nhau phát triển.", en: "Present the work, exchange perspectives and keep refining it. Knowledge grows through shared experience." } },
+    ],
+  },
+  disciplines: {
+    eyebrow: { vi: "LĨNH VỰC KHÁM PHÁ", en: "WHAT WE DO" },
+    title: { vi: "Nơi phần cứng\ngặp ý tưởng.", en: "Where hardware\nmeets possibility." },
+    description: {
+      vi: "Sáu hướng tiếp cận. Một tinh thần chung: hiểu sâu, thử nghiệm và tạo ra những điều có ích.",
+      en: "Six fields of exploration. One shared approach: understand deeply, experiment and build something useful.",
+    },
+    items: [
+      { name: "ROBOTICS", description: { vi: "Cơ cấu, điều khiển và chuyển động tự động.", en: "Mechanisms, control and autonomous motion." } },
+      { name: "IoT", description: { vi: "Kết nối thiết bị với dữ liệu và thế giới thực.", en: "Connecting devices, data and the physical world." } },
+      { name: "EMBEDDED SYSTEMS", description: { vi: "Phần mềm làm việc cùng phần cứng.", en: "Software working in close partnership with hardware." } },
+      { name: "AIoT", description: { vi: "Khám phá trí tuệ nhân tạo trong hệ thống kết nối.", en: "Exploring intelligence in connected systems." } },
+      { name: "ELECTRONICS", description: { vi: "Từ linh kiện và mạch điện đến hệ thống hoàn chỉnh.", en: "From components and circuits to complete systems." } },
+      { name: "RESEARCH", description: { vi: "Đặt câu hỏi. Thử nghiệm. Tìm lời giải.", en: "Ask questions. Run experiments. Find answers." } },
+    ],
+  },
+  sections: {
+    projects: { eyebrow: { vi: "DỰ ÁN TIÊU BIỂU", en: "SELECTED WORK" }, title: { vi: "Ý tưởng được hiện thực hóa.", en: "Ideas, made tangible." }, description: { vi: "Đi sâu vào một dự án: bài toán đặt ra, hướng tiếp cận và mô hình được giới thiệu trước cộng đồng kỹ thuật.", en: "A closer look at a project: the problem, the approach and a prototype presented to the engineering community." } },
+    achievements: { eyebrow: { vi: "THÀNH TÍCH", en: "MILESTONES" }, title: { vi: "Những dấu mốc của RIO.", en: "Progress worth remembering." }, description: { vi: "Những kết quả ghi lại một chặng đường học hỏi, thử nghiệm và cùng nhau bước tiếp.", en: "Results that mark a shared journey of learning, experimenting and moving forward." } },
+    activities: { eyebrow: { vi: "HOẠT ĐỘNG & CUỘC THI", en: "ACTIVITIES & COMPETITIONS" }, title: { vi: "Bước ra ngoài\nbàn làm việc.", en: "Beyond\nthe workbench." }, description: { vi: "Từ gian trưng bày sản phẩm đến sân thi đấu robotics. Những nơi RIO học hỏi, chia sẻ và kết nối với cộng đồng.", en: "From project exhibitions to the robotics competition floor. The places where RIO learns, shares and connects." } },
+    gallery: { eyebrow: { vi: "THƯ VIỆN HÌNH ẢNH", en: "PHOTO LIBRARY" }, title: { vi: "Con người. Sản phẩm.\nNhững khoảnh khắc.", en: "People. Projects.\nShared moments." }, description: { vi: "Một góc nhìn gần hơn về RIO qua những bức ảnh từ dự án, cuộc thi và hoạt động cộng đồng. Chọn một ảnh để xem trọn khung hình.", en: "A closer view of RIO through projects, competitions and community activities. Select a photograph to see the full frame." } },
+    members: { eyebrow: { vi: "CON NGƯỜI", en: "OUR PEOPLE" }, title: { vi: "Những người cùng tạo nên RIO.", en: "The people behind RIO." }, description: { vi: "Những người cùng chia sẻ niềm yêu thích kỹ thuật.", en: "People who share a curiosity for engineering." } },
+  },
+  technologies: {
+    eyebrow: { vi: "CÔNG NGHỆ", en: "THE TOOLBOX" },
+    title: { vi: "Công cụ để khám phá.", en: "Tools for exploration." },
+    description: { vi: "Một thế giới công nghệ để tìm hiểu, thử nghiệm và kết nối.", en: "A landscape of technologies to learn, experiment with and connect." },
+  },
+  join: {
+    eyebrow: { vi: "CÙNG RIO BẮT ĐẦU", en: "YOUR NEXT CHAPTER" },
+    title: { vi: ["CÙNG LÀM", "NÊN ĐIỀU", "THỰC TẾ."], en: ["BUILD", "SOMETHING", "REAL."] },
+    description: {
+      vi: "Mang theo sự tò mò của bạn. Kết nối với RIO để tìm hiểu về câu lạc bộ và thông tin tham gia mới nhất.",
+      en: "Bring your curiosity. Get in touch with RIO to learn about the club and the latest opportunities to join.",
+    },
+    contactLabel: { vi: "KẾT NỐI VỚI CHÚNG MÌNH", en: "LET’S CONNECT" },
+    contactNote: { vi: "Thông tin tham gia được cập nhật trên Facebook RIO.", en: "Find the latest membership updates on RIO’s Facebook page." },
+    signature: "ENGINEER WHAT’S NEXT.",
+  },
+} as const;

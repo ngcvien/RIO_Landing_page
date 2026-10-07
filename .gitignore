@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.next-verify/
+out/
+.vercel/
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+.qa/
+*.log
+promt.md
