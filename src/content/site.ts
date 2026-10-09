@@ -63,7 +63,7 @@ export const siteConfig = {
       en: "An engineering community at VKU, exploring robotics, IoT, embedded systems and technology that works in the real world.",
     },
     principles: ["ENGINEERING", "RESEARCH", "BUILD", "INNOVATION"],
-    image: photos.demonstration,
+    image: photos.hero,
     imageLabel: { vi: "FACTORYMIND / AIoT INNOWORKS 2026", en: "FACTORYMIND / AIoT INNOWORKS 2026" },
     imageIndex: "FIG. 01",
     footer: { vi: "TỪ Ý TƯỞNG ĐẾN THỰC TẾ.", en: "FROM IDEAS TO REALITY." },

@@ -45,11 +45,11 @@ Toàn bộ copy và dữ liệu nằm trong [src/content](./src/content); không
 
 Các chuỗi có bản dịch dùng cấu trúc `{ vi: "...", en: "..." }`. Tên riêng, tên công nghệ giữ nguyên giữa hai ngôn ngữ.
 
-Một section chỉ xuất hiện khi **flag bật và mảng dữ liệu có phần tử**. Menu tự loại bỏ liên kết đến section đang ẩn. Mục thành viên mặc định tắt; bật `members` sau khi thêm dữ liệu xác thực. Các layout dự án xen kẽ, hoạt động editorial, thành tích timeline, gallery bất đối xứng và danh sách thành viên đã được triển khai sẵn.
+Một section chỉ xuất hiện khi **flag bật và mảng dữ liệu có phần tử**. Menu tự loại bỏ liên kết đến section đang ẩn. Mục thành viên mặc định tắt; bật `members` sau khi thêm dữ liệu xác thực. Các layout dự án xen kẽ, hoạt động editorial, thành tích timeline, gallery dạng lưới gọn và danh sách thành viên đã được triển khai sẵn.
 
 Khi thêm nội dung, điền đủ cả hai ngôn ngữ, dùng ID duy nhất, `image.src` dạng `/images/projects/ten-anh.webp`, kích thước gốc và alt text có nghĩa. Ngày hoạt động dùng ISO `YYYY-MM-DD`. `href` là tùy chọn: bỏ qua nếu chưa có trang chi tiết, không đặt liên kết giả `#`. Không đưa đường dẫn nội bộ đến trang chưa tồn tại.
 
-Gallery hỗ trợ `wide`, `portrait`, `square`; mở ảnh trong lightbox để xem toàn bộ khung hình, dùng phím trái/phải để chuyển và Escape để đóng. Ảnh dự án dùng crop 4:5 trên desktop và 4:3 trên điện thoại. Các layout dự án trên điện thoại luôn đưa ảnh lên trước nội dung.
+Gallery dùng lưới 3 cột trên desktop và 2 cột dưới 960px, ảnh thu nhỏ cùng tỷ lệ 3:2. Để thêm ảnh, khai báo ảnh trong `photos.ts`, rồi thêm mục gồm `id`, `image`, `caption` vào `gallery.ts`; không cần chọn layout riêng. Mở ảnh trong lightbox để xem toàn bộ khung hình, dùng phím trái/phải để chuyển và Escape để đóng. Ảnh dự án dùng crop 4:5 trên desktop và 4:3 trên điện thoại. Các layout dự án trên điện thoại luôn đưa ảnh lên trước nội dung.
 
 ## Cơ sở thiết kế thương hiệu
 
@@ -60,7 +60,7 @@ Gallery hỗ trợ `wide`, `portrait`, `square`; mở ảnh trong lightbox để
 - **Bố cục:** grid 12 cột, tương phản giữa khoảng trắng và các vùng navy, đường phân cách mảnh, không card grid hoặc gradient trang trí.
 - **Chuyển động:** hero hiện nhẹ khi vào trang; các nhóm nội dung reveal một lần khi cuộn; sơ đồ tín hiệu vẽ một lần; ảnh/nút/menu có hover nhẹ và header có thanh tiến độ cuộn. Không parallax mạnh, không hiệu ứng chạy lặp liên tục. Tắt chuyển động theo `prefers-reduced-motion`; nội dung vẫn hiển thị khi không có JavaScript.
 
-Hiện có dự án FactoryMind, 4 bài hoạt động/cuộc thi, 2 dấu mốc thành tích và 6 ảnh thư viện. Tên FactoryMind và hướng tiếp cận AIoT lấy từ poster dự án; IoT Challenge 2025 có bảng giải nhất; ảnh InnoWorks ghi ngày 26/09/2026 và chứng nhận Top 20 Finalist. Không tự thêm tên thành viên hoặc đối tác. Mục thành viên tiếp tục ẩn vì chưa có danh sách xác thực. Danh sách công nghệ chung là công cụ khám phá theo brief; công nghệ trong dự án lấy riêng từ poster.
+Hiện có dự án FactoryMind, 4 bài hoạt động/cuộc thi, 3 dấu mốc thành tích và 9 ảnh thư viện. Tên FactoryMind và hướng tiếp cận AIoT lấy từ poster dự án; IoT Challenge 2025 có bảng giải nhất; ảnh InnoWorks ghi ngày 26/09/2026 và chứng nhận Top 20 Finalist. Không tự thêm tên thành viên hoặc đối tác. Mục thành viên tiếp tục ẩn vì chưa có danh sách xác thực. Danh sách công nghệ chung là công cụ khám phá theo brief; công nghệ trong dự án lấy riêng từ poster.
 
 ## Dark mode, liên hệ và chuyển động
 

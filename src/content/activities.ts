@@ -21,7 +21,7 @@ export const activities: Activity[] = [
     id: "iot-challenge-2025", year: "2025",
     title: { vi: "Một dấu mốc tại IoT Challenge 2025", en: "A milestone at IoT Challenge 2025" },
     category: { vi: "Cuộc thi / IoT", en: "Competition / IoT" },
-    description: { vi: "Từ quá trình chuẩn bị đến khoảnh khắc nhận giải nhất, IoT Challenge 2025 là một phần trong câu chuyện học và làm của RIO. Bức ảnh cùng bảng giải thưởng lưu lại niềm vui của đội thi sau hành trình với chủ đề Edge AI for Smart Retail.", en: "From preparation to the moment of receiving first prize, IoT Challenge 2025 is part of RIO’s story of learning through making. The team photograph captures the celebration after a journey around Edge AI for Smart Retail." },
+    description: { vi: "Từ quá trình chuẩn bị đến khoảnh khắc nhận quán quân, IoT Challenge 2025 là một phần trong câu chuyện học và làm của RIO. Bức ảnh cùng bảng giải thưởng lưu lại niềm vui của đội thi sau hành trình với chủ đề Edge AI for Smart Retail.", en: "From preparation to the moment of receiving first prize, IoT Challenge 2025 is part of RIO’s story of learning through making. The team photograph captures the celebration after a journey around Edge AI for Smart Retail." },
     image: photos.iotChampions,
   },
   {

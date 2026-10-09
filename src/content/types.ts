@@ -53,7 +53,6 @@ export interface GalleryItem {
   id: string;
   image: ContentImage;
   caption: Localized;
-  layout: "wide" | "portrait" | "square";
 }
 
 export interface ContactChannel {

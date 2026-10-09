@@ -26,9 +26,9 @@ export function PhotoGallery({ lang }: { lang: Locale }) {
 
   return <>
     <div className="gallery-layout">
-      {gallery.map((item, index) => <figure className={`gallery-${item.layout}`} key={item.id}>
+      {gallery.map((item, index) => <figure key={item.id}>
         <button type="button" className="gallery-trigger" onClick={() => setSelected(index)} aria-label={`${site.labels.openPhoto[lang]}: ${item.image.alt[lang]}`} aria-haspopup="dialog">
-          <Image src={item.image.src} alt={item.image.alt[lang]} width={item.image.width} height={item.image.height} sizes="(max-width: 760px) 100vw, 66vw" />
+          <Image src={item.image.src} alt={item.image.alt[lang]} width={item.image.width} height={item.image.height} sizes="(max-width: 959px) 50vw, 33vw" />
           <span className="gallery-open mono" aria-hidden="true">{site.labels.openPhoto[lang]} ↗</span>
         </button>
         <figcaption className="mono">{item.caption[lang]}</figcaption>
